@@ -1,8 +1,4 @@
---WS/BMC/1569912--
+-- WS_AP/HNL/2021-22/2173625
+-- Activate connection and Pay action ording mismatch fix.
 
--- Update round off collection
-update egbs_demanddetail_v1 set collectionamount=0.00 where demandid='a9bd3910-89bb-46e4-ba5d-b3126924f5a3'
-and taxheadcode='WS_Round_Off';
-
--- expire bill
-update egbs_billdetail_v1 set expirydate=1643673599000 where consumercode='WS/BMC/1569912' and expirydate=1643846399896;
+update eg_wf_processinstance_v2 set createdtime='1642573848000', lastmodifiedtime='1642573848000' where id='256838fb-598d-450f-bce1-d386b530ff1e';
