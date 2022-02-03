@@ -1,12 +1,9 @@
--- update demand
-update egbs_demanddetail_v1 edv
-set collectionamount = taxamount
-where demandid = (select id from egbs_demand_v1 edv where consumercode ='PT-RRG-510457'
-order by taxperiodfrom fetch first row only);
-
--- Expiry bill
-update egbs_billdetail_v1 set expirydate ='1639352396000'
-where id in (select ebv.id from egbs_billdetail_v1 ebv
-		inner join egbs_bill_v1 ebv2 on ebv.billid=ebv2.id
-	where ebv2.status ='ACTIVE' 
-		and consumercode in ('PT-RRG-510457'));
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-03-571748' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-04-571755' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-06-571766' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-13-571796' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-20-571852' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-BJR-2022-01-18-571831' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-BJR-2022-01-19-571839' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-KCN-2022-02-03-572011' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-MT-KCN-000008' and action='APPROVE';
