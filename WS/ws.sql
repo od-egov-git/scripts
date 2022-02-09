@@ -1,19 +1,23 @@
--- Meter reading to delete for OTHERS usageCategory logged from 9-SEP-2021
+--WS/BMC/1574832--
 
-delete from eg_ws_meterreading where
-id not in (select distinct on (connectionno) id from eg_ws_meterreading order by connectionno, currentreadingdate)
-and connectionno in (select distinct connectionno from eg_ws_connection where id in (
-select connection_id from eg_ws_service where usagecategory='OTHERS')
-and isoldapplication=false and applicationstatus='CONNECTION_ACTIVATED')
-and date(to_timestamp(currentreadingdate/1000)) >= to_date('2021-09-09', 'yyyy-MM-dd');
+-- Update demand to payment completed
+update egbs_demand_v1
+set ispaymentcompleted=true
+where id in ('87b63ba1-a047-4268-936e-9a3169e71bd1',
+			'040ef8d7-49e7-41c6-ab21-0d9f150b5de3',
+			'bf4b2c76-5538-4c71-9d40-28d3b3eccc54',
+			'4f3c0251-d4c6-4f89-8c81-0566e68ce16b');
 
+-- Update time rebate to adjusted amount
+update egbs_demanddetail_v1
+set taxamount=-6
+where demandid='4f3c0251-d4c6-4f89-8c81-0566e68ce16b'
+and taxheadcode='WS_TIME_REBATE';
 
--- Update OTHERS to BPL
-
-update eg_ws_service set usagecategory='BPL' where connection_id in (
-select ews.connection_id
-from eg_ws_connection ewc
-	inner join eg_ws_service ews on ews.connection_id=ewc.id
-where ews.usagecategory='OTHERS'
-	and ewc.isoldapplication=false
-	and ewc.applicationstatus='CONNECTION_ACTIVATED');
+-- update collected amount
+update egbs_demanddetail_v1
+set collectionamount=taxamount
+where demandid in ('87b63ba1-a047-4268-936e-9a3169e71bd1',
+			'040ef8d7-49e7-41c6-ab21-0d9f150b5de3',
+			'bf4b2c76-5538-4c71-9d40-28d3b3eccc54',
+			'4f3c0251-d4c6-4f89-8c81-0566e68ce16b');
