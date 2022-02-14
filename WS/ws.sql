@@ -1,257 +1,337 @@
--- Duplicate Demand Details Deletion Query For Anandapur--
+-- Duplicate Demand Details Deletion Query For Bhadrak--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.anandapur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhadrak'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.anandapur');
+and businessservice ='WS' and tenantid ='od.bhadrak');
 
 
--- Duplicate Demand Deletion Query For Anandapur--
+-- Duplicate Demand Deletion Query For Bhadrak--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.anandapur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhadrak'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.anandapur';
+and businessservice ='WS' and tenantid ='od.bhadrak';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Angul--
+-- Duplicate Demand Details Deletion Query For Bhanjanagar--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.angul'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhanjanagar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.angul');
+and businessservice ='WS' and tenantid ='od.bhanjanagar');
 
 
--- Duplicate Demand Deletion Query For Angul--
+-- Duplicate Demand Deletion Query For Bhanjanagar--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.angul'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhanjanagar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.angul';
+and businessservice ='WS' and tenantid ='od.bhanjanagar';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Aska--
+-- Duplicate Demand Details Deletion Query For Bhawanipatna--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.aska'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhawanipatna'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.aska');
+and businessservice ='WS' and tenantid ='od.bhawanipatna');
 
 
--- Duplicate Demand Deletion Query For Aska--
+-- Duplicate Demand Deletion Query For Bhawanipatna--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.aska'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhawanipatna'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.aska';
+and businessservice ='WS' and tenantid ='od.bhawanipatna';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Athagarh--
+-- Duplicate Demand Details Deletion Query For Bhuban--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.athagarh'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhuban'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.athagarh');
+and businessservice ='WS' and tenantid ='od.bhuban');
 
 
--- Duplicate Demand Deletion Query For Athagarh--
+-- Duplicate Demand Deletion Query For Bhuban--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.athagarh'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bhuban'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.athagarh';
+and businessservice ='WS' and tenantid ='od.bhuban';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Athmallik--
+-- Duplicate Demand Details Deletion Query For Birmitrapur--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.athmallik'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.birmitrapur'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.athmallik');
+and businessservice ='WS' and tenantid ='od.birmitrapur');
 
 
--- Duplicate Demand Deletion Query For Athmallik--
+-- Duplicate Demand Deletion Query For Birmitrapur--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.athmallik'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.birmitrapur'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.athmallik';
+and businessservice ='WS' and tenantid ='od.birmitrapur';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Attabira--
+-- Duplicate Demand Details Deletion Query For Boudhgarh--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.attabira'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.boudhgarh'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.attabira');
+and businessservice ='WS' and tenantid ='od.boudhgarh');
 
 
--- Duplicate Demand Deletion Query For Attabira--
+-- Duplicate Demand Deletion Query For Boudhgarh--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.attabira'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.boudhgarh'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.attabira';
+and businessservice ='WS' and tenantid ='od.boudhgarh';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Balangir--
+-- Duplicate Demand Details Deletion Query For Brajrajnagar--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.balangir'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.brajrajnagar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.balangir');
+and businessservice ='WS' and tenantid ='od.brajrajnagar');
 
 
--- Duplicate Demand Deletion Query For Balangir--
+-- Duplicate Demand Deletion Query For Brajrajnagar--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.balangir'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.brajrajnagar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.balangir';
+and businessservice ='WS' and tenantid ='od.brajrajnagar';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Balugaon--
+-- Duplicate Demand Details Deletion Query For Buguda--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.balugaon'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.buguda'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.balugaon');
+and businessservice ='WS' and tenantid ='od.buguda');
 
 
--- Duplicate Demand Deletion Query For Balugaon--
+-- Duplicate Demand Deletion Query For Buguda--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.balugaon'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.buguda'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.balugaon';
+and businessservice ='WS' and tenantid ='od.buguda';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Banki--
+-- Duplicate Demand Details Deletion Query For Chatrapur--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.banki'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.chatrapur'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.banki');
+and businessservice ='WS' and tenantid ='od.chatrapur');
 
 
--- Duplicate Demand Deletion Query For Banki--
+-- Duplicate Demand Query For Chatrapur--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.banki'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.chatrapur'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.banki';
+and businessservice ='WS' and tenantid ='od.chatrapur';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Banpur--
+-- Duplicate Demand Details Deletion Query For Chikiti--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.banpur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.chikiti'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.banpur');
+and businessservice ='WS' and tenantid ='od.chikiti');
 
 
--- Duplicate Demand Deletion Query For Banpur--
+-- Duplicate Demand Deletion Query For Chikiti--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.banpur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.chikiti'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.banpur';
+and businessservice ='WS' and tenantid ='od.chikiti';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Barbil--
+-- Duplicate Demand Details Deletion Query For Choudwar--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.barbil'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.choudwar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.barbil');
+and businessservice ='WS' and tenantid ='od.choudwar');
 
 
--- Duplicate Demand Deletion Query For Barbil--
+-- Duplicate Demand Deletion Query For Choudwar --
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.barbil'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.choudwar'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.barbil';
+and businessservice ='WS' and tenantid ='od.choudwar';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Bargarh--
+-- Duplicate Demand Details Deletion Query For Deogarh--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bargarh'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.deogarh'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.bargarh');
+and businessservice ='WS' and tenantid ='od.deogarh');
 
 
--- Duplicate Demand Deletion Query For Bargarh--
+-- Duplicate Demand Deletion Query For Deogarh--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.bargarh'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.deogarh'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.bargarh';
+and businessservice ='WS' and tenantid ='od.deogarh';
 
-----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
--- Duplicate Demand Details Deletion Query For Basudevpur--
+-- Duplicate Demand Details Deletion Query For Dhenkanal--
 
 delete from egbs_demanddetail_v1 edv where demandid in (
 select id from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.basudevpur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.dhenkanal'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.basudevpur');
+and businessservice ='WS' and tenantid ='od.dhenkanal');
 
 
--- Duplicate Demand Deletion Query For Basudevpur--
+-- Duplicate Demand Deletion Query For Dhenkanal--
 
 delete from egbs_demand_v1 edv2 where id not in (
 select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
-from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.basudevpur'
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.dhenkanal'
 order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
-and businessservice ='WS' and tenantid ='od.basudevpur';
+and businessservice ='WS' and tenantid ='od.dhenkanal';
+
+------------------------------------------------------------------------------------------------------------------------
+
+-- Duplicate Demand Details Deletion Query For Digapahandi--
+
+delete from egbs_demanddetail_v1 edv where demandid in (
+select id from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.digapahandi'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.digapahandi');
+
+
+-- Duplicate Demand Deletion Query For Digapahandi--
+
+delete from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.digapahandi'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.digapahandi';
+
+------------------------------------------------------------------------------------------------------------------------
+
+-- Duplicate Demand Details Deletion Query For Ganjam--
+
+delete from egbs_demanddetail_v1 edv where demandid in (
+select id from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.ganjam'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.ganjam');
+
+
+-- Duplicate Demand Deletion Query For Ganjam--
+
+delete from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.ganjam'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.ganjam';
+
+------------------------------------------------------------------------------------------------------------------------
+
+-- Duplicate Demand Details Deletion Query For Gopalpur--
+
+delete from egbs_demanddetail_v1 edv where demandid in (
+select id from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.gopalpur'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.gopalpur');
+
+
+-- Duplicate Demand Deletion Query For Gopalpur--
+
+delete from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.gopalpur'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.gopalpur';
+
+------------------------------------------------------------------------------------------------------------------------
+
+-- Duplicate Demand Details Deletion Query For Gudayagiri--
+
+delete from egbs_demanddetail_v1 edv where demandid in (
+select id from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.gudayagiri'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.gudayagiri');
+
+
+-- Duplicate Demand Deletion Query For Gudayagiri--
+
+delete from egbs_demand_v1 edv2 where id not in (
+select distinct on (consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000))) id
+from egbs_demand_v1 edv where businessservice='WS' and tenantid ='od.gudayagiri'
+order by consumercode, date(to_timestamp(taxperiodfrom/1000)), date(to_timestamp(taxperiodto/1000)), createdtime)
+and businessservice ='WS' and tenantid ='od.gudayagiri';
