@@ -1,9 +1,5 @@
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-03-571748' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-04-571755' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-06-571766' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-13-571796' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-CHH-2022-01-20-571852' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-BJR-2022-01-18-571831' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-BJR-2022-01-19-571839' and action='APPROVE';
-delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-KCN-2022-02-03-572011' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-BJR-2022-02-02-571997' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-MT-BJR-000022' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-AS-KSN-2022-01-01-571743' and action='APPROVE';
+delete from eg_wf_processinstance_v2 ewpv where businessid='PT-MT-PRI-000017' and action='APPROVE';
 delete from eg_wf_processinstance_v2 ewpv where businessid='PT-MT-KCN-000008' and action='APPROVE';
