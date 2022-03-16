@@ -1,10 +1,3 @@
-INSERT INTO eg_vendor_driver
-  (vendor_id,driver_id)
-VALUES
-  ('55047eca-c156-433c-8783-b8144479e7ee','0fc47e25-2b62-4ffc-873c-fb7333f85d5a');
-INSERT INTO eg_vendor_vehicle
-  (vendor_id,vechile_id)
-VALUES
-  ('55047eca-c156-433c-8783-b8144479e7ee','bdc74110-7394-4051-bba1-41315fa2b39d'),
-  ('55047eca-c156-433c-8783-b8144479e7ee','43909873-25c9-44a3-bbfd-8e2161f0d3d9');
-update eg_vehicle set owner_id='4f3b6d06-5686-450c-b908-5797a8c48368',type='TRUCK.TATA_EICHER' where registrationnumber='OD-06-D-8588' and tenantid='od.dhenkanal';
+update eg_vendor_vehicle set vendor_id='08c9780d-f15a-4144-988a-cf7ebb25d985' where vehicle_id='9265ce89-4ba8-4ee6-9a45-81acb366f4ee';
+update eg_vendor_vehicle set vendor_id='08c9780d-f15a-4144-988a-cf7ebb25d985' where vehicle_id='b4b3be26-26ad-40b0-ba61-6a29136fd95c';
+update eg_vehicle set tankcapicity='3000' where registrationnumber='0R-07-J-2839';
