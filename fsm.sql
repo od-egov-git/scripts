@@ -1,3 +1,5 @@
-update eg_vendor_vehicle set vendor_id='08c9780d-f15a-4144-988a-cf7ebb25d985' where vehicle_id='9265ce89-4ba8-4ee6-9a45-81acb366f4ee';
-update eg_vendor_vehicle set vendor_id='08c9780d-f15a-4144-988a-cf7ebb25d985' where vehicle_id='b4b3be26-26ad-40b0-ba61-6a29136fd95c';
-update eg_vehicle set tankcapicity='3000' where registrationnumber='0R-07-J-2839';
+update eg_vehicle set registrationnumber='0D-07-AE-8338' where id='00991645-b672-4eea-8621-65102bff7e56';
+update eg_vendor set owner_id='09fece5c-c9b0-4b0c-94a4-018b7c7398be' where id='34de6921-dbff-4749-bf89-6e06cd8f792f';
+update eg_vehicle set  owner_id='09fece5c-c9b0-4b0c-94a4-018b7c7398be' where id='550fc621-7a61-49cf-9629-b11211509cef';
+update eg_vehicle set  owner_id='09fece5c-c9b0-4b0c-94a4-018b7c7398be' where id='00991645-b672-4eea-8621-65102bff7e56';
+update eg_vendor_driver set vendor_id='08c9780d-f15a-4144-988a-cf7ebb25d985' where driver_id in ('163dac50-3398-42a0-a5f9-52a711755018','459b1fe0-edc5-44fe-88a6-302b19b696c2','ced88007-8a5c-4184-ad55-440695e907c9');
