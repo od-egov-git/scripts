@@ -1,35 +1,24 @@
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.puri';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.jajpur';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.jaleswar';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.jatni';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.jeypore';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.jharsuguda';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.khandapada';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.khariar';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.khariarroad';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.khordha';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kodala';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.konark';
-====
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kashinagar';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kendrapara';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.keonjhargarh';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kesinga';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.khallikote';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.sambalpur';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.paradeep';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.paralakhemundi';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.patnagarh';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.pattamundai';
-===========
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.nayagarh';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.nilgiri';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.nimapara';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.nuapada';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.odagaon';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.padampur';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.koraput';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kotpad';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.kuchinda';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.malkangiri';
-update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.nabarangpur';
+SET9:
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.phulbani';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.pipli';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.polasara';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.purushottampur';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.rairangpur';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.rajgangpur';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.rambha';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.rayagada';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.redhakhol';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.rourkela';
+
+SET10:
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.sonepur';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.soro';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.sunabeda';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.sundargarh';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.surada';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.talcher';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.tarbha';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.titilagarh';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.udala';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.umerkote';
+update egbs_billdetail_v1 set expirydate = 1649116799000 where expirydate > 1649116799000 and businessservice = 'PT' and tenantid = 'od.vyasanagar';
