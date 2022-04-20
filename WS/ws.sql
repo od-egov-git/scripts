@@ -1,26 +1,15 @@
--- WS/CTC/1780572
--- Update Demand to paid
-update egbs_demand_v1 
-set ispaymentcompleted=true
-where id in ('02aae1ee-e194-4258-8a8c-9e9fb4b60625',
-'32b98b6e-a510-43ff-a642-bbec5ac38a76',
-'50ba4ab7-9091-419d-bc1a-71215318c8f2',
-'88fe1155-a659-4b74-9081-82e3a619df13',
-'a7871154-4bea-40a3-8ef6-4c73bc9df3a9',
-'ea3d6c5c-0027-4dce-a66e-7c925b6adf84');
+-- Update queries
+-- Expire all the Active bills
+update egbs_bill_v1 ebv
+set status ='EXPIRED'
+where id = (select billid from egbs_billdetail_v1 ebv2 where businessservice ='WS' and consumercode = 'WS/CTC/1840334') and status = 'ACTIVE';
 
--- Update demand details
-update egbs_demanddetail_v1
-set collectionamount=taxamount
-where demandid in ('02aae1ee-e194-4258-8a8c-9e9fb4b60625',
-'32b98b6e-a510-43ff-a642-bbec5ac38a76',
-'50ba4ab7-9091-419d-bc1a-71215318c8f2',
-'88fe1155-a659-4b74-9081-82e3a619df13',
-'a7871154-4bea-40a3-8ef6-4c73bc9df3a9',
-'ea3d6c5c-0027-4dce-a66e-7c925b6adf84');
+-- Activate the specific bills.
+update egbs_bill_v1 ebv
+set status = 'ACTIVE'
+where id = (select billid from egbs_billdetail_v1 ebv where businessservice ='WS' and billno = 'BILLNO-WS-7115500') and status <> 'PAID';
 
--- Expire active bills
-update egbs_bill_v1 ebv2
-set status = 'EXPIRED'
-where status ='ACTIVE' and 
-id in (select billid from egbs_billdetail_v1 ebv where consumercode = 'WS/CTC/1780572');
+-- set expiry date to till 20/4/2022 11:59:59
+update egbs_billdetail_v1 ebv 
+set expirydate = 1650479399000
+where businessservice ='WS' and billno = 'BILLNO-WS-7115500';
